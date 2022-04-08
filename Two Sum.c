@@ -1,6 +1,7 @@
 /**
  * @problem name: Two Sum
  * @problem link: https://leetcode.com/problems/two-sum/
+ *
  * @solution status: accepted
  * @solution time complexity: Linear O(n)
  *
@@ -9,10 +10,12 @@
  */
 
 
+
 #include<stdio.h>
 #include<stdlib.h>
 
 #define SIZE 50000
+
 
 int hashToTable(int key) {
     int r = key % SIZE;
