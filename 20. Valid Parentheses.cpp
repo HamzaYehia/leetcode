@@ -2,7 +2,7 @@
  * @problem name: Valid Parentheses
  * @problem link: https://leetcode.com/problems/valid-parentheses/
  *
- * @solution time complexity: Linear O(n) Where n is the length's of string (s)
+ * @solution time complexity: O(n) Where n is the length's of string (s)
  * @solution status: accepted
  *
  * @author: Hamza Yehia (github.com/HamzaYehia)
