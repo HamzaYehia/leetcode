@@ -1,5 +1,5 @@
 /**
- * @problem name: Valid Parentheses
+ * @problem name: 20. Valid Parentheses
  * @problem link: https://leetcode.com/problems/valid-parentheses/
  *
  * @solution time complexity: O(n) Where n is the length's of string (s)

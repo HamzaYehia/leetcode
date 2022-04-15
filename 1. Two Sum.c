@@ -1,5 +1,5 @@
 /**
- * @problem name: Two Sum
+ * @problem name: 1. Two Sum
  * @problem link: https://leetcode.com/problems/two-sum/
  *
  * @solution status: accepted

@@ -1,5 +1,5 @@
 ﻿/**
- * @problem name: Palindrome Number
+ * @problem name: 9. Palindrome Number
  * @problem link: https://leetcode.com/problems/palindrome-number/
  *
  * @solution status: accepted
