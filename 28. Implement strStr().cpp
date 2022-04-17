@@ -2,7 +2,7 @@
  * @problem name: 28. Implement strStr()
  * @problem link: https://leetcode.com/problems/implement-strstr/
  *
- * @solution time complexity: O(n+m)
+ * @solution time complexity: O(n+m)  Where: n = haystack, m = needle
  * @solution status: accepted
  *
  * @author: Hamza Yehia (github.com/HamzaYehia)
