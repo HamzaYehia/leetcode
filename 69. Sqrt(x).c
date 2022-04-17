@@ -2,7 +2,7 @@
  * @problem name: 69. Sqrt(x)
  * @problem link: https://leetcode.com/problems/sqrtx/
  *
- * @solution time complexity:
+ * @solution time complexity: Worst case will never reach O(log n)
  * @solution status: accepted
  *
  * @author: Hamza Yehia (github.com/HamzaYehia)

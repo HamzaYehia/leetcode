@@ -2,7 +2,7 @@
  * @problem name: 26. Remove Duplicates from Sorted Array
  * @problem link: https://leetcode.com/problems/sqrtx/
  *
- * @solution time complexity: O(n^2)
+ * @solution time complexity: O(n)
  * @solution status: accepted
  *
  * @author: Hamza Yehia (github.com/HamzaYehia)
