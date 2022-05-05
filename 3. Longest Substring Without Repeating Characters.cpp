@@ -9,19 +9,16 @@
  * @date: 2022-May-5
  */
 
-class Solution
-{
+
+class Solution {
 public:
-    int lengthOfLongestSubstring(string s)
-    {
+    int lengthOfLongestSubstring(string s) {
         int longest_substring = 0;
 
         map<char, int> characters;
 
-        for (int i = 0, j = 0; i < s.length(); i++)
-        {
-            if (characters.find(s[i]) != characters.end())
-            {
+        for (int i = 0, j = 0; i < s.length(); i++) {
+            if (characters.find(s[i]) != characters.end()) {
                 j = characters[s[i] + 1];
                 characters.erase(s[i]);
             }
