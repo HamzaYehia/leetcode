@@ -10,19 +10,20 @@
  */
 
 
-string toLowerAndRemoveNonAlphanumeric(string str) {
-    string finalString = "";
-    for (int i = 0; i < str.length(); i++) {
-        if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z') || (str[i] >= '0' && str[i] <= '9')) {
-            finalString += tolower(str[i]);
-        }
-    }
-    return finalString;
-}
-
-
 class Solution {
 public:
+
+    string toLowerAndRemoveNonAlphanumeric(string str) {
+        string finalString = "";
+        for (int i = 0; i < str.length(); i++) {
+            if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z') || (str[i] >= '0' && str[i] <= '9')) {
+                finalString += tolower(str[i]);
+            }
+        }
+        return finalString;
+    }
+
+
     bool isPalindrome(string s) {
 
         if (s.length() == 1) return true;
@@ -39,7 +40,6 @@ public:
                 break;
             }
         }
-
         return isPalindrome;
     }
 };
