@@ -1,11 +1,14 @@
 """
  @problem name: Binary Search
  @problem link: https://leetcode.com/problems/binary-search/
+
  @solution time complexity: O(log n)
  @solution status: accepted
+ 
  @author: Hamza Yehia (github.com/HamzaYehia)
  @date: 2022-Jul-1
 """
+
 
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
