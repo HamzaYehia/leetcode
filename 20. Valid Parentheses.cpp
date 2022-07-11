@@ -2,8 +2,8 @@
  * @problem name: 20. Valid Parentheses
  * @problem link: https://leetcode.com/problems/valid-parentheses/
  *
- * @solution time complexity: O(n) Where n is the length's of string (s)
- * @solution status: accepted
+ * @time complexity: O(n)
+ * @space comlexity: O(n)
  *
  * @author: Hamza Yehia (github.com/HamzaYehia)
  * @date: 2022-Apr-14
