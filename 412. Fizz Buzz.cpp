@@ -13,6 +13,7 @@
 class Solution {
 public:
     vector<string> fizzBuzz(int n) {
+
         vector<string> answer;
 
         for (int i = 1; i <= n; i++) {
@@ -29,12 +30,13 @@ public:
 };
 
 
-// another scalable solution:
+// Another scalable solution:
 
 class Solution {
 public:
     vector<string> fizzBuzz(int n) {
-        vector<string> answer;
+
+        vector<string> answers;
         int divisors[2] = { 3, 5 };
 
         map<int, string> fizzBuzzDict = {
@@ -42,15 +44,20 @@ public:
         };
 
         for (int num = 1; num <= n; num++) {
-            string ans = "";
+
+            string currentAnswer = "";
 
             for (int key : divisors) {
-                if (num % key == 0) ans += fizzBuzzDict.at(key);
+                if (num % key == 0) currentAnswer += fizzBuzzDict.at(key);
             }
 
-            if (ans == "") ans += to_string(num);
-            answer.push_back(ans);
+            if (currentAnswer.empty()) {
+                currentAnswer += to_string(num);
+            }
+
+            answers.push_back(currentAnswer);
         }
-        return answer;
+
+        return answers;
     }
 };
