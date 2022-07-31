@@ -12,7 +12,7 @@
 
 char* replaceDigits(char* s) {
     char currentChar = 'a';
-    
+
     for (int i = 1; s[i] != '\0'; i++) {
         currentChar = s[i - 1];
         if (s[i] >= '0' && s[i] <= '9') {
@@ -20,6 +20,6 @@ char* replaceDigits(char* s) {
             s[i] = currentChar;
         }
     }
-    
+
     return s;
 }
