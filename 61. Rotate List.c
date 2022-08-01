@@ -2,7 +2,7 @@
  * @problem name: Rotate List
  * @problem link: https://leetcode.com/problems/rotate-list/
  *
- * @solution time complexity: O(n) where n = length of the linked list
+ * @solution time complexity: O(n)
  * @solution status: accepted
  *
  * @author: Hamza Yehia (github.com/HamzaYehia)

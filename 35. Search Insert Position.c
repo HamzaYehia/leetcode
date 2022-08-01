@@ -1,9 +1,9 @@
 /**
- * @problem name: 35. Search Insert Position
+ * @problem name: Search Insert Position
  * @problem link: https://leetcode.com/problems/search-insert-position/
  *
- * @solution status: accepted
- * @solution time complexity: Linear O(log n)
+ * @space complexity: O(1)
+ * @time complexity: O(log n)
  *
  * @author: Hamza Yehia (github.com/HamzaYehia)
  * @date: 2022-Apr-19
