@@ -3,7 +3,7 @@
  * @problem link: https://leetcode.com/problems/validate-binary-search-tree/
  *
  * @time complexity: O(n)
- * @space complexity: O(1)
+ * @space complexity: O(n)
  *
  * @author: Hamza Yehia (github.com/HamzaYehia)
  * @date: 2022-Jul-27
