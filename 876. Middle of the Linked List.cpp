@@ -18,8 +18,6 @@ public:
         ListNode* slowRunner = head, * fastRunner = head;
 
         while (fastRunner != nullptr && fastRunner->next != nullptr) {
-            if (fastRunner == nullptr) return slowRunner;
-
             slowRunner = slowRunner->next;
             fastRunner = fastRunner->next->next;
         }
