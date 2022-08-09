@@ -1,9 +1,9 @@
 /**
- * @problem name: 19. Remove Nth Node From End of List
+ * @problem name: Remove Nth Node From End of List
  * @problem link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
  *
- * @solution time complexity: O(2n)
- * @solution status: accepted
+ * @time complexity: O(n)
+ * @space complexity: O(1)
  *
  * @author: Hamza Yehia (github.com/HamzaYehia)
  * @date: 2022-Jun-05
@@ -16,42 +16,23 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
         return NULL;
     }
 
-    struct ListNode* head_reversed = NULL;
+    struct ListNode* tempHead = head;
+    int nodesCounter = 0;
 
-    struct ListNode* temp1 = head;
-
-    while (temp1 != NULL) {
-        struct ListNode* new_node = (struct ListNode*)malloc(1 * sizeof(struct ListNode));
-        new_node->val = temp1->val;
-        new_node->next = head_reversed;
-
-        head_reversed = new_node;
-
-        temp1 = temp1->next;
+    while (tempHead != NULL) {
+        nodesCounter++;
+        tempHead = tempHead->next;
     }
 
+    nodesCounter -= n;
+    tempHead = head;
 
-    struct ListNode* final_head = NULL;
+    if (nodesCounter == 0) return head->next;
 
-    struct ListNode* temp2 = head_reversed;
-
-    int position = 1;
-    while (temp2 != NULL) {
-        if (position == n) {
-            temp2 = temp2->next;
-            position++;
-            continue;
-        }
-
-        struct ListNode* new_node = (struct ListNode*)malloc(1 * sizeof(struct ListNode));
-        new_node->val = temp2->val;
-        new_node->next = final_head;
-
-        final_head = new_node;
-
-        temp2 = temp2->next;
-        position++;
+    while (--nodesCounter) {
+        tempHead = tempHead->next;
     }
 
-    return final_head;
+    tempHead->next = tempHead->next->next;
+    return head;
 }
