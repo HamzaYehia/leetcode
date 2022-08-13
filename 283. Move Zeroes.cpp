@@ -19,8 +19,6 @@ public:
             if (nums[i] != 0) nums[lastNonZero++] = nums[i];
         }
 
-        for (; lastNonZero < nums.size(); lastNonZero++) {
-            nums[lastNonZero] = 0;
-        }
+        fill(nums.begin() + lastNonZero, nums.end(), 0);
     }
 };
