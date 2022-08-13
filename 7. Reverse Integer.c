@@ -2,8 +2,8 @@
  * @problem name: Reverse Integer
  * @problem link: https://leetcode.com/problems/reverse-integer/
  *
- * @time complexity: O(n)
- * @space comlexity: O(log n)
+ * @time complexity: O(log n)
+ * @space comlexity: O(1)
  *
  * @author: Hamza Yehia (github.com/HamzaYehia)
  * @date: 2022-Aug-13
