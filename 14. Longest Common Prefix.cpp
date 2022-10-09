@@ -13,12 +13,20 @@
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
+        string firstString = strs[0];
+
         for (int i = 1; i < strs.size(); i++) {
-            while (strs[i].find(strs[0]) != 0) {
-                strs[0] = strs[0].substr(0, strs[0].length() - 1);
+            /**
+             * if firstString doesnt exist in string i
+             * delete the last character in firstString
+             * and try again
+            */
+            while (strs[i].find(firstString) != 0) {
+                firstString = firstString.substr(0, firstString.length() - 1);
             }
-            if (strs[0] == "") break;
+            if (firstString == "") break;
         }
-        return strs[0];
+
+        return firstString;
     }
 };
