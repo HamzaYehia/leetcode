@@ -3,13 +3,13 @@ public:
     int numJewelsInStones(string jewels, string stones) {
         int counter = 0;
 
-        unordered_set<char> chars;
+        unordered_set<char> jewelsSet;
         for (char i : jewels) {
-            chars.insert(i);
+            jewelsSet.insert(i);
         }
 
         for (char i : stones) {
-            if (chars.find(i) != chars.end()) counter++;
+            if (jewelsSet.find(i) != jewelsSet.end()) counter++;
         }
 
         return counter;
