@@ -4,7 +4,9 @@ public:
         int counter = 0;
 
         unordered_set<char> chars;
-        for (char i : jewels) chars.insert(i);
+        for (char i : jewels) {
+            chars.insert(i);
+        }
 
         for (char i : stones) {
             if (chars.find(i) != chars.end()) counter++;
