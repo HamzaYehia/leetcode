@@ -2,7 +2,7 @@ class Solution {
 public:
     bool canConstruct(string ransomNote, string magazine) {
         
-        unordered_multiset<int> magazineChars;
+        unordered_multiset<char> magazineChars;
 
         for (char i : magazine) magazineChars.insert(i);
 
